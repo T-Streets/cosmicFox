@@ -5,7 +5,7 @@ import '../styles.scss';
 const App = () => {
     return (
         <div>
-            <h2>See you space Cowboy</h2>
+            <h2>Cosmic Fox Crytsals</h2>
         </div>
     );
 }
