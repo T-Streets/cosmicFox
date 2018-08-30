@@ -1,8 +1,5 @@
-# webpack4_react_boilerplate
+# Cosmic Fox Crystals
 
-Custom React Boiler plate configured using Webpack4 <br>
-SASS compatible
+Ecommerce website for a Crystal Guru <br>
 
-Run with:<br>
-npm install<br>
-npm run start:dev
+
