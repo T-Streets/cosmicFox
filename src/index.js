@@ -1,13 +1,14 @@
 import React from 'react';
 import { render } from 'react-dom';
 import '../styles.scss';
+import App from './Components/App';
 
-const App = () => {
+const Main = () => {
     return (
         <div>
-            <h2>Cosmic Fox Crytsals</h2>
+            <App />
         </div>
     );
 }
 
-render(<App />, document.getElementById('app'));
+render(<Main />, document.getElementById('app'));
