@@ -7,16 +7,51 @@ export default class Slider extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {}
+        this.state = {
+            images: [crys1, crys2, crys3],
+            currentIndex: 0,
+            translateValue: 0,
+        }
+    }
+
+    // prevSlide = () => {
+
+    // }
+
+    nextSlide = () => {
+        if(this.state.currentIndex === this.state.images.length - 1) {
+            return this.state({
+                currentIndex: 0,
+                translateValue: 0
+            })
+        }
+        this.setState(prevState => ({
+            currentIndex: prevState.currentIndex + 1,
+            translateValue: prevState.translateValue + -(this.slideWidth())
+        }));
+    }
+
+    slideWidth = () => {
+        return document.querySelector('.slide').clientWidth;
     }
 
     render() {
         return(
             <div className='slider'>
-                <Slide />
+                <div className='slider-wrapper'
+                    style={{
+                        transform: `translateX(${this.state.translateValue}px`,
+                        transition: 'transform ease-out 0.45s'
+                    }}>
+                        {
+                            this.state.images.map((image, i) => {
+                                <Slide key = {i} image={image} />
+                            })
+                        }
+                </div>
                 
-                <LeftArrow />
-                <RightArrow />
+                <LeftArrow prevSlide={this.prevSlide}/>
+                <RightArrow nextSlide = {this.nextSlide} />
                    
             </div>
         )
