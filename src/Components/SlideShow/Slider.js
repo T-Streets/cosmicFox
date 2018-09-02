@@ -3,12 +3,13 @@ import Slide from './Slide';
 import LeftArrow from './LeftArrow';
 import RightArrow from './RightArrow';
 
+
 export default class Slider extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-            images: [crys1, crys2, crys3],
+            images: ['crys1', 'crys2', 'crys3'],
             currentIndex: 0,
             translateValue: 0,
         }

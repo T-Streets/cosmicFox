@@ -1,9 +1,10 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LeftArrow = (props) => {
     return (
         <div className='nextArrow' onClick={props.prevSlide}>
-            <i className="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
+            <FontAwesomeIcon icon='arrow-left' />
         </div>
     );
 }
