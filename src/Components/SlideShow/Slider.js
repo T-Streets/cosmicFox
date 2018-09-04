@@ -51,8 +51,8 @@ export default class Slider extends Component {
                         }
                 </div>
                 
-                <LeftArrow prevSlide={this.prevSlide}/>
-                <RightArrow nextSlide = {this.nextSlide} />
+                {/* <LeftArrow prevSlide={this.prevSlide}/>
+                <RightArrow nextSlide = {this.nextSlide} /> */}
                    
             </div>
         )
