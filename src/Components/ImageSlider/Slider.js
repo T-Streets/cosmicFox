@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import LeftArrow from "./LeftArrow";
 import RightArrow from "./RightArrow";
 import Slide from './Slide';
-import Crys1 from '../images/crys1.jpg';
-import Crys2 from '../images/crys2.jpg';
-import Crys3 from '../images/crys3.jpg';
+import Crys1 from '../../images/crys1.jpg';
+import Crys2 from '../../images/crys2.jpg';
+import Crys3 from '../../images/crys3.jpg';
 
 export default class Slider extends Component {
     constructor(props) {
