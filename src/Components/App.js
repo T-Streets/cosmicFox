@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import Carousel from './ImageSlider/Carousel';
+import Slider from './ImageSlider/Slider';
 
 class App extends Component {
     render(){
         return (
             <div>
                 <Nav />
-                <Carousel />
+                <Slider />
             </div>
         )
     }
