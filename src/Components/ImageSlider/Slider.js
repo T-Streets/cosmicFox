@@ -49,7 +49,9 @@ export default class Slider extends Component {
                     }}>
                     {
                         this.state.images.map((image, i) => {
-                            <Slide image={image} key={i} />
+                            return (
+                                <Slide image={image} key={i} />
+                            )
                         })
                     }
                 </div>
