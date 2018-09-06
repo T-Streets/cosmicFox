@@ -10,7 +10,19 @@ h2 {
 
 
 nav {
-    background-color: #6E6AF9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 5px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    background: #272727;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    box-shadow: 0 8px 4px -6px rgb(99, 99, 99);
+
 }
 
 nav ul {
@@ -18,6 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    
 }
 
 .title {
@@ -29,8 +42,15 @@ nav li {
     color: whitesmoke;
     display: block;
     padding: 10px;
+    transition: .5s;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
 }
 
-nav li:hover {
-    background-color: #928EFA;
+nav li.active,
+nav li:hover
+{
+    color: #ffc746;
+    background-color:#282828;
 }
