@@ -30,7 +30,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
 .title {
@@ -53,4 +53,24 @@ nav li:hover
 {
     color: #ffc746;
     background-color:#282828;
+}
+
+
+
+/* Slider Styling */
+.slider {
+    height: 600px;
+    width: 100%;
+
+    .slider-wrapper {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slide {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
 }
