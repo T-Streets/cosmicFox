@@ -21,7 +21,6 @@ nav {
     background: #272727;
     opacity: 0.8;
     filter: alpha(opacity=80);
-    box-shadow: 0 8px 4px -6px rgb(99, 99, 99);
 
 }
 
@@ -59,18 +58,20 @@ nav li:hover
 
 /* Slider Styling */
 .slider {
-    height: 600px;
+    height: 500px;
     width: 100%;
+    padding: 70px;
 
-    .slider-wrapper {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
+}
 
-    .slide {
-        height: 100%;
-        width: 100%;
-        display: inline-block;
-    }
+.slider-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
 }
