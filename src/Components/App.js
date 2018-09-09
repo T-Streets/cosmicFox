@@ -23,8 +23,7 @@ class App extends Component {
     render(){
         return (
             <div>
-                {/* { this.state.navbarVisible ? <Nav userScroll = {true} /> : null} */}
-                <Nav userScroll={this.state.navbarVisible ? 'true' : 'false'} />
+            { this.state.navbarVisible ? <Nav /> : null}
                 <Slider />
             </div>
         )
