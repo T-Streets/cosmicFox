@@ -39,9 +39,6 @@ class App extends Component {
             <div>
             { this.state.navbarVisible ? <Nav /> : null}
                 <Slider />
-                <Slider />
-                <Slider />
-                <Slider />
             </div>
         )
     }
