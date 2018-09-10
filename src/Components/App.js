@@ -22,20 +22,13 @@ class App extends Component {
     }
     
     handleScroll = () => {
-        this.setState(prevState => {
-            while(this.state.counter < 40) {
-                const incrementCounter = {
-                    counter: prevState.counter += 1
-                }
-                return {...incrementCounter}
-            }
-        })
-        if(this.state.counter === 40) {
-            this.setState({
-                navbarVisible: true
-            })
-        }
-        console.log(this.state.counter)
+        const { counter, navbarVisible } = this.state
+        const currentYPosition = window.pageYOffset || document.documentElement.scrollTop
+
+        currentYPosition >= 40 ?
+            this.setState({ navbarVisible: true })
+            :
+            this.setState({ navbarVisible: false })
     }
 
     render(){
