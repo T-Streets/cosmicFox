@@ -8,6 +8,7 @@ class App extends Component {
 
         this.state = {
             navbarVisible: false,
+            counter: 0
         }
     }
 
@@ -16,14 +17,27 @@ class App extends Component {
     }
     
     handleScroll = () => {
-        this.setState({navbarVisible: true})
-        console.log(this.state.navbarVisible)
+        this.setState(prevState => {
+            const incrementCounter = {
+                counter: prevState.counter += 1
+            }
+            return {...incrementCounter}
+        })
+        if(this.state.counter > 50) {
+            this.setState({
+                navbarVisible: true
+            })
+        }
+        console.log(this.state.navbarVisible, this.state.counter)
     }
 
     render(){
         return (
             <div>
             { this.state.navbarVisible ? <Nav /> : null}
+                <Slider />
+                <Slider />
+                <Slider />
                 <Slider />
             </div>
         )
