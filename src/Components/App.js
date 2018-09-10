@@ -18,26 +18,34 @@ class App extends Component {
 
     componentWillUnmount = () => {
         window.removeEventListener('scroll', this.handleScroll)
+        console.log('this just ran')
     }
     
     handleScroll = () => {
         this.setState(prevState => {
-            const incrementCounter = {
-                counter: prevState.counter += 1
+            while(this.state.counter < 40) {
+                const incrementCounter = {
+                    counter: prevState.counter += 1
+                }
+                return {...incrementCounter}
             }
-            return {...incrementCounter}
         })
-        if(this.state.counter > 50) {
+        if(this.state.counter === 40) {
             this.setState({
                 navbarVisible: true
             })
         }
+        console.log(this.state.counter)
     }
 
     render(){
         return (
             <div>
             { this.state.navbarVisible ? <Nav /> : null}
+                <Slider />
+                <Slider />
+                <Slider />
+                <Slider />
                 <Slider />
             </div>
         )
