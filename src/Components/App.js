@@ -15,6 +15,10 @@ class App extends Component {
     componentDidMount = () => {
         window.addEventListener('scroll', this.handleScroll)
     }
+
+    componentWillUnmount = () => {
+        window.removeEventListener('scroll', this.handleScroll)
+    }
     
     handleScroll = () => {
         this.setState(prevState => {
@@ -28,7 +32,6 @@ class App extends Component {
                 navbarVisible: true
             })
         }
-        console.log(this.state.navbarVisible, this.state.counter)
     }
 
     render(){
