@@ -22,7 +22,6 @@ class App extends Component {
     }
     
     handleScroll = () => {
-        const { counter, navbarVisible } = this.state
         const currentYPosition = window.pageYOffset || document.documentElement.scrollTop
 
         currentYPosition >= 40 ?
