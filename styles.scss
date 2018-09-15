@@ -1,6 +1,11 @@
+$bg-color: whitesmoke;
+$text-color: black;
+$nav-color: #272727;
+$text-font: 'Raleway', sans-serif;
+
 body {
-    background-color:whitesmoke;
-    color: black;
+    background-color: $bg-color;
+    color: $text-color;
     font-size: 16px;
 }
 
@@ -18,7 +23,7 @@ nav {
     padding: 5px 100px;
     box-sizing: border-box;
     transition: 0.5s;
-    background: #272727;
+    background: $nav-color;
     opacity: 0.8;
     filter: alpha(opacity=80);
     z-index: 99999;
@@ -43,7 +48,7 @@ nav li {
     padding: 10px;
     transition: .5s;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: $text-font;
     border-radius: 2px;
 }
 
